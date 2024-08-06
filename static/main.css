@@ -2,8 +2,23 @@ body {
     background: #fafafa;
     color: #333333;
     margin-top: 5rem;
+    height: 100%;
   }
   
+  html {
+    height: 100%;
+  }
+
+  .site-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .site-content {
+    flex: 1;
+  }
+
   h1, h2, h3, h4, h5, h6 {
     color: #444444;
   }
@@ -28,14 +43,27 @@ body {
     font-weight: 500;
   }
   
+  .navbar {
+    box-shadow: 0 5px 10px rgba(17, 17, 17, 0.125),
+    0 3px 3px rgba(17, 17, 17, 0.25);
+  }
+
   .content-section {
     background: #ffffff;
     padding: 10px 20px;
     border: 1px solid #dddddd;
-    border-radius: 3px;
+    border-radius: 8px;
     margin-bottom: 20px;
   }
-  
+
+  .media.content-section {
+    transition: 0.5s ease;
+    &:hover {
+      box-shadow: 0 10px 20px rgba(17, 17, 17, 0.125),
+    0 5px 5px rgba(17, 17, 17, 0.25);
+    }
+  }
+
   .article-title {
     color: #444444;
   }
